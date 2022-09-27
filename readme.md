@@ -1,10 +1,13 @@
-# is-online
+# is-online-electron
 
 > Check if the internet connection is up
 
 Works in Node.js and the browser *(with a bundler)*.
 
 In the browser, there is already [`navigator.onLine`](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine.onLine), but it's useless as it only tells you if there's a local connection, and not whether the internet is accessible.
+
+
+Note: The only change in this repo is `import os from 'node:os'` changing to `import os from 'os'`
 
 ## Install
 

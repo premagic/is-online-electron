@@ -1,4 +1,4 @@
-import os from 'node:os';
+import os from 'os';
 import got, {CancelError} from 'got';
 import publicIp from 'public-ip';
 import pAny from 'p-any';
