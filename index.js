@@ -1,8 +1,10 @@
-import os from 'os';
-import got, {CancelError} from 'got';
-import publicIp from 'public-ip';
-import pAny from 'p-any';
-import pTimeout from 'p-timeout';
+const os = require('os');
+const got = require('got');
+// import got, {CancelError} from 'got';
+
+const publicIp = require( 'public-ip');
+const pAny = require( 'p-any');
+const pTimeout = require( 'p-timeout');
 
 const appleCheck = options => {
 	const gotPromise = got('https://captive.apple.com/hotspot-detect.html', {
